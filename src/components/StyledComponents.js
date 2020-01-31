@@ -1,6 +1,14 @@
 import styled from 'styled-components';
 
-export const SearchForm = styled.form``;
+export const SearchDiv = styled.form`
+  width: 30%;
+  margin: 1% auto;
+`;
+
+export const SearchInput = styled.input`
+  width: 100%;
+  font-size: .8rem;
+`;
 
 export const CharacterSection = styled.section`
   display: flex;

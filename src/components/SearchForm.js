@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { SearchDiv, SearchInput } from './StyledComponents'
 import axios from "axios";
 
 export default function SearchForm(props) {
@@ -24,9 +25,9 @@ export default function SearchForm(props) {
 
   return (
     <section className="search-form">
-      <form>
-        <input type="text" name="search" placeholder="Search for a character" value={query} onChange={handleChange} />
-      </form>
+      <SearchDiv>
+        <SearchInput type="text" name="search" placeholder="Search for a character" value={query} onChange={handleChange} />
+      </SearchDiv>
     </section>
   );
 }
