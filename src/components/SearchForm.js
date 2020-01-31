@@ -3,7 +3,6 @@ import axios from "axios";
 
 export default function SearchForm(props) {
   const [query, setQuery] = useState("");
-  const [search, setSearch] = useState();
 
   useEffect(() => {
     axios.get(`https://rickandmortyapi.com/api/character/?name=${query}`)
@@ -23,17 +22,10 @@ export default function SearchForm(props) {
     setQuery(event.target.value)
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   setQuery(search);
-  //   setSearch("");
-  // };
-
   return (
     <section className="search-form">
       <form>
         <input type="text" name="search" placeholder="Search for a character" value={query} onChange={handleChange} />
-        {/* <button type="submit">Search!</button> */}
       </form>
     </section>
   );
