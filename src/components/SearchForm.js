@@ -10,7 +10,7 @@ export default function SearchForm(props) {
       .then(response => {
         console.log(response.data);
         const results = response.data.results.filter((character) => {
-          character.name.toLowerCase().includes(query.toLowerCase())
+          return character.name.toLowerCase().includes(query.toLowerCase())
         });
         props.setCharacters(results);
       })
