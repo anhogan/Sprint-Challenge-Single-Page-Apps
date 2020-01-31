@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function propsCard(props) {
+export default function CharacterCard (props) {
   return (
     <div>
       <img src={props.image} alt={props.name} />
