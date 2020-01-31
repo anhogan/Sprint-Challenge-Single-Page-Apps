@@ -20,12 +20,7 @@ export default function CharacterList() {
     <section className="character-list">
       {characters.map(character => (
         <div>
-          <img src={character.image} alt={character.name} />
-          <h3>{character.name}</h3>
-          <p><strong>Species:</strong>{character.species}</p>
-          <p><strong>Gender:</strong>{character.gender}</p>
-          <p><strong>Origin:</strong>{character.origin.name}</p>
-          <p><strong>Location:</strong>{character.location.name}</p>
+          <CharacterCard image={character.image} name={character.name} species={character.species} gender={character.gender} origin={character.origin} location={character.location} />
         </div>
       ))}
     </section>
