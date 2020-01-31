@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SearchForm from './SearchForm';
 import CharacterCard from './CharacterCard';
+import { CharacterSection, CharacterDiv } from './StyledComponents';
 import axios from "axios";
 
 export default function CharacterList() {
@@ -20,13 +21,13 @@ export default function CharacterList() {
   return (
     <div>
       <SearchForm setCharacters={setCharacters} />
-      <section className="character-list">
+      <CharacterSection className="character-list">
         {characters.map(character => (
-          <div>
+          <CharacterDiv>
             <CharacterCard image={character.image} name={character.name} species={character.species} gender={character.gender} origin={character.origin} location={character.location} />
-          </div>
+          </CharacterDiv>
         ))}
-      </section>
+      </CharacterSection>
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.link-container {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-container a {
+  text-decoration: none;
+  color: lightblue;
+  margin: 1% 12.5%;
+  font-size: 1.2rem;
+}
+
+.link-container a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.link-container a:active {
+  color: darkred;
+}

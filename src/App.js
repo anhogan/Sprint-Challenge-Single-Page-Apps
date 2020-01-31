@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Header from "./components/Header.js";
 import WelcomePage from './components/WelcomePage';
 import CharacterList from './components/CharacterList';
+import './App.css';
 
 
 export default function App() {
